@@ -5,14 +5,6 @@ import matplotlib.pyplot as plt
 SERVER_NAME = 'tcp:wa-azgb-te-msq01.database.windows.net'
 DATABASE_NAME = 'datamill-des'
 
-# Driver={ODBC Driver 13 for SQL Server};
-
-
-# tcp:wa-azgb-te-msq01.database.windows.net
-# owerthingadmin
-
-# Server=tcp:wa-azgb-dv-msq01.database.windows.net,1433;Initial Catalog=datamill-des;Persist Security Info=False;User ID=powerthingadmin;Password=Wateraid9$#4%;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
-
 conn = ado.connect("""
     Driver={{SQL Server Native Client 11.0}};
     Server={0};
@@ -43,11 +35,11 @@ print(df2)
 # df2.hist()
 #pd.DataFrame.plot.hist(df2)
 
-print(df1.shape)
-print(df2.shape)
+# print(df1.shape)
+# print(df2.shape)
 
-print(df1.dtypes)
-print(df2.dtypes)
+# print(df1.dtypes)
+# print(df2.dtypes)
 
 # for col in df1.columns:
 #     print(col)
